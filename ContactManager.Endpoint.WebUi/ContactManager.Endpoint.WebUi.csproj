@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ContactManager.Data.EF\ContactManager.Data.EF.csproj" />
+    <ProjectReference Include="..\ContactManager.Data.InMemory\ContactManager.Data.InMemory.csproj" />
+    <ProjectReference Include="..\ContactManager.Domain.Contracts\ContactManager.Domain.Contracts.csproj" />
+    <ProjectReference Include="..\ContactManager.Domain.Entites\ContactManager.Domain.Entites.csproj" />
+    <ProjectReference Include="..\ContactManager.Domain.Services\ContactManager.Domain.Services.csproj" />
+    <ProjectReference Include="..\ContactManager.Service.ApplicationServices\ContactManager.Service.ApplicationServices.csproj" />
+  </ItemGroup>
+
+</Project>
